@@ -67,7 +67,7 @@ sleep 60
 cd /data/data/com.termux/files/usr/var/lib/tor/hidden_service
 echo ""
 clear 
-bash OnlineHacking/Logo2.sh
+bash $HOME/HostDarkWeb/OnlineHacking/Logo2.sh
 echo ""
 echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Your Onion Site is Ready !! \e[0m'
 echo ""
