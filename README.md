@@ -12,15 +12,15 @@
 ## Usage
 
 ```bash
-git clone https://github.com/anubhavanonymous/HostOnion
+git clone https://github.com/OnlineHacKing/HostDarkWeb
 ```
 
 ```bash
-cd HostOnion
+cd HostDarkWeb
 ```
 
 ```bash
-bash hostonion.sh
+bash hostonion
 ```
 ## Note
 * `This tool is for termux users only!`
