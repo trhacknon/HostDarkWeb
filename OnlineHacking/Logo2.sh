@@ -15,10 +15,9 @@ SUMAN ©\e[34m
     ██╔══██║██╔══██║██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║  
     ██║  ██║██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝  
     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝   
-ONLINE HACKING			  
-							  							  
+ONLINE HACKING			  					  							  
           \e[m"
-echo -e " \e[36mwww.onlinehacking.in / \e[0m\e[92mwww.onlinehacking.xyz \e[0m\n"
+echo -e "     \e[36mwww.onlinehacking.in / \e[0m\e[92mwww.onlinehacking.xyz \e[0m\n"
   
 
 		     echo ""
