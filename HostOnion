@@ -4,14 +4,14 @@ clear
 echo -e "\033[1;93m ‎"
 bash OnlineHacking/Logo.sh
 sleep 5
-echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Installing Dependencies ! \e[0m'
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Installing Dependencies ! \e[0m'
 apt update -y
 apt upgrade -y
 apt install tor -y
 apt install wget -y
 apt install php -y
 apt install nano
-echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Enter Details to display on the Webpage \e[0m'
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Enter Details to display on the Webpage \e[0m'
 echo ""
 #Enter Full Name
 search="%nfame"
