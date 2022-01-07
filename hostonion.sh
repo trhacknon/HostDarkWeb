@@ -1,20 +1,13 @@
 #!bin/bash
-#Coded by Anubhav Kashyap
-#Don't Try to Steal it Bitch !!!
+#Coded by Suman
 apt install figlet
 clear
 echo -e "\033[1;93m ‎"
-figlet -f slant HostOnion
-sleep 1
-echo ""
-echo -e "              \033[1;91m  Author   \033[1;90m: \033[1;95mAnubhav Kashyap"
-echo -e "              \033[1;93m  Group    \033[1;90m: \033[1;96mDeepweb Shadows"
-echo -e "              \033[1;92m Instagram \033[1;90m: \033[1;94m@anubhavanonymous"
-echo -e "              \033[1;97m  Github   \033[1;90m: \033[1;93mgithub.com/anubhavanonymous"
-echo ""
-echo -e ""
-sleep 1
+bash OnlineHacking/Logo.sh
+sleep 5
 echo -e $'\e[1;33m[\e[0m\e[1;77m HostOnion \e[0m\e[1;33m]\e[0m\e[1;32m # Installing Dependencies ! \e[0m'
+apt update -y
+apt upgrade -y
 apt install tor -y
 apt install wget -y
 apt install php -y
