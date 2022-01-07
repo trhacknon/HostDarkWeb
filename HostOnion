@@ -71,6 +71,7 @@ bash $HOME/HostDarkWeb/OnlineHacking/Logo2.sh
 echo ""
 echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Your Onion Site is Ready !! \e[0m'
 echo ""
+
 echo -e "\e[91m "
 cat hostname
 echo -e "\e[39m "
