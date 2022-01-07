@@ -79,7 +79,7 @@ echo ""
 echo ""
 echo -e '\e[91m[\e[92m*\e[91m]\e[1;93m Pro Tip :\e[0m\e[1;36m Replace the HTML file with your own to get your webpage hosted on Deepweb !!  '
 echo ""
-echo -e '\e[0m\e[1;32m ## Press ctrl + c to Exit \e[0m'
+echo -e '\e[0m\e[1;32m ## Press CTRL + C to Exit \e[0m'
 echo ""
 while true
 do
