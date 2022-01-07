@@ -34,5 +34,4 @@ echo -e "              \033[1;97m  Website   \033[1;90m: \033[1;93mwww.onlinehac
 echo ""
 echo -e ""
 sleep 1                                               
-      }
-       banner
+
