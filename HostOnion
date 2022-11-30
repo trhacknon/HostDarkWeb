@@ -309,6 +309,7 @@ apt install tor -y
 apt install wget -y
 apt install php -y
 apt install nano -y
+pkg install ncurses-utils -y
 echo ""
 echo ""
 echo ""
