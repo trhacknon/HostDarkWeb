@@ -256,21 +256,21 @@ echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # En
 echo ""
 #Enter Full Name
 search="%nfame"
-read -p "\e[93mEnter Your Full Name \e[34m>>> \e[97m" replace
+read -p $'\e[93mEnter Your Full Name \e[34m>>> \e[97m' replace
 if [[ $search != "" && $replace != "" ]]; then
 sed -i "s/$search/$replace/gi" web/index.html
 fi
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Enter Nick Name
 search="%criets"
-read -p "\e[93mEnter Your Nick Name \e[34m>>> \e[97m" replace
+read -p $'\e[93mEnter Your Nick Name \e[34m>>> \e[97m' replace
 if [[ $search != "" && $replace != "" ]]; then
 sed -i "s/$search/$replace/gi" web/index.html
 fi
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Enter Main Text
 search="%Maintext"
-read -p "\e[93mEnter the Main Message \e[34m>>> \e[97m" replace
+read -p $'\e[93mEnter the Main Message \e[34m>>> \e[97m' replace
 if [[ $search != "" && $replace != "" ]]; then
 sed -i "s/$search/$replace/gi" web/index.html
 fi
