@@ -245,6 +245,44 @@ echo -e "     \e[1m    \e[95mwww.termux.xyz \e[92m/ \e[0m\e[93mwww.onlinehacking
 
 		     echo ""
          }
+	 
+	 
+	 
+	 
+	 
+	 
+web() {
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Enter Details to display on the Webpage \e[0m'
+echo ""
+#Enter Full Name
+search="%nfame"
+read -p "\e[93mEnter Your Full Name \e[34m>>> \e[97m" replace
+if [[ $search != "" && $replace != "" ]]; then
+sed -i "s/$search/$replace/gi" web/index.html
+fi
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#Enter Nick Name
+search="%criets"
+read -p "\e[93mEnter Your Nick Name \e[34m>>> \e[97m" replace
+if [[ $search != "" && $replace != "" ]]; then
+sed -i "s/$search/$replace/gi" web/index.html
+fi
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#Enter Main Text
+search="%Maintext"
+read -p "\e[93mEnter the Main Message \e[34m>>> \e[97m" replace
+if [[ $search != "" && $replace != "" ]]; then
+sed -i "s/$search/$replace/gi" web/index.html
+fi
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#-----------------------------------------------
+
+echo "" 
+}
+
+
+
+
 
 clear
 echo ""
@@ -273,32 +311,7 @@ apt install nano -y
 echo ""
 echo ""
 echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Enter Details to display on the Webpage \e[0m'
-echo ""
-#Enter Full Name
-search="%nfame"
-read -p "\e[93mEnter Your Full Name \e[34m>>> \e[97m" replace
-if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/gi" web/index.html
-fi
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#Enter Nick Name
-search="%criets"
-read -p "\e[93mEnter Your Nick Name \e[34m>>> \e[97m" replace
-if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/gi" web/index.html
-fi
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#Enter Main Text
-search="%Maintext"
-read -p "\e[93mEnter the Main Message \e[34m>>> \e[97m" replace
-if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/gi" web/index.html
-fi
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#-----------------------------------------------
-
-echo ""                                                                                                                            
+web                                                                                                                           
 php="$(ps -efw | grep php | grep -v grep | awk '{print $2}')"                                                                     
 kill -9 $php > /dev/null 2>&1
 kill -9 $tor > /dev/null 2>&1
