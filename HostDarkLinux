@@ -54,7 +54,6 @@ sleep 5
 echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m ## Setting up TOR \e[0m'
 sudo service tor restart
 sleep 20
-sudo cd /var/lib/tor/hidden_service
 echo ""
 clear 
 sudo bash $HOME/HostDarkWeb/OnlineHacking/Logo2.sh
@@ -63,7 +62,7 @@ echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Yo
 echo ""
 echo -e '\e[31m[\e[32m★\e[31m]\e[32m Your Dark Web Link \e[m '
 echo -e "\e[91m "
-sudo cat hostname
+sudo cat /var/lib/tor/hidden_service/hostname
 echo -e "\e[39m "
 echo ""
 echo ""
