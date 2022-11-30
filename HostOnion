@@ -1,54 +1,341 @@
 #!bin/bash
 #Coded by Suman
+echo -e " "
+
+
+
+
+check_status() {
+        echo -ne "\e[33m Internet Status : "
+        timeout 3s curl -fIs "https://api.github.com" > /dev/null
+        [ $? -eq 0 ] && echo -e "\e[92m Online\e[0m" || echo -e "\e[31mOffline\e[0m"
+}
+
+## server
+server() {
 clear
-echo -e "\033[1;93m ‎"
-bash OnlineHacking/Logo.sh
-sleep 5
-echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Installing Dependencies ! \e[0m'
-apt update -y
-apt upgrade -y
-apt install tor -y
-apt install wget -y
-apt install php -y
-apt install nano
+logo1
+echo " "
+echo -e "\e[1;96m< < < ====================================================== > > >\e[m "
+echo ""
+                           echo ""
+			   ( sleep 2 ) &> /dev/null & connection
+                           echo ""
+                           ( sleep 4 ) &> /dev/null & spin_1
+			   echo ""
+			   (sleep 4) &> /dev/null & spin_2
+			   echo ""
+			   tput civis
+			   ( sleep 8 ) &> /dev/null & spinner_1
+                           echo ""
+			   php -S 127.0.0.1:4444 > /dev/null 2>&1 &
+			   ( sleep 4 ) &> /dev/null & spinner_2
+			   echo ""
+			   ( sleep 4 ) &> /dev/null & spinner_3
+			   echo ""
+			   sleep 2
+			   echo ""
+
+}
+
+## Exit message
+msg_exit() {
+echo ""
+echo -e "\e[91m[\e[92m+\e[91m] \e[92m Thank you For using this tool. Have a good day. \e[m "
+echo ""
+echo -e "\e[1m\e[36m[+] More Hacking Totorial Chack this Website :\e[93m www.onlinehacking.org \e[m "
+echo ""
+echo -e "\e[1m\e[95m[+] Join Telegarm Channel :\e[93m https://t.me/OnlineHacking \e[m "
+echo ""
+echo ""
+}
+
+
+connection() {
+while :
+do
+if curl -s --head  --request GET www.google.com | grep "200 OK" > /dev/null ; then
+    echo -e "\e[91m[ \e[1;92m※ \e[91m]\e[1;93m Check Your Connection..... \e[1;96m[\e[1;92m Active ●\e[1;96m ]\e[m"
+    echo 
+    sleep 3
+    break
+else
+    echo -e "\e[1;92m >> \e[1;93mCheck Your Connection..... \e[1;96m[\e[1;91m Inactive ●\e[1;96m ]\e[m"
+    sleep 2
+    echo
+    echo -e "\e[1;92m>> \e[1;91mCheck your connection and Try Again!!\e[m"
+    sleep 3
+    echo
+    exit
+fi
+done
+}
+
+#spin
+spin_1 () {
+local pid=$!
+local delay=0.05
+local spinstr='|/-\'
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+local temp=${spinstr#?}
+tput civis
+printf "\e[1;91m\r[\e[92m⨝\e[91m]\e[1;93m Connecting Tor Server... \e[96m[\e[1;92m%c\e[1;93m\e[96m]\e[0m  " "$spinstr"
+local spinstr=$temp${spinstr%"$temp"}
+sleep $delay
+printf "\b\b\b\b\b\b"
+done
+printf "   \b\b\b"
+tput cnorm
+printf "\e[1;96m [\e[1;92m Connect Successfully \e[1;96m]\e[0m"
+echo
+}
+
+#spin
+spin_2 () {
+local pid=$!
+local delay=0.05
+local spinstr='|/-\'
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+local temp=${spinstr#?}
+tput civis
+printf "\e[1;91m\r[\e[92m◈\e[91m]\e[1;93m Server Status Chacking ... \e[96m[\e[1;92m%c\e[1;93m\e[96m]\e[0m  " "$spinstr"
+local spinstr=$temp${spinstr%"$temp"}
+sleep $delay
+printf "\b\b\b\b\b\b"
+done
+printf "   \b\b\b"
+tput cnorm
+printf "\e[1;96m [\e[1;92m Online ● \e[1;96m]\e[0m"
+echo
+}
+
+spinner_1 () {
+
+local pid=$!
+local delay=0.25
+local spinner=( '█■■■■' '■█■■■' '■■█■■' '■■■█■' '■■■■█' )
+
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+
+for i in "${spinner[@]}"
+do
+	tput civis
+	echo -ne "\033[1;91m\r[\e[1;92m▶\e[1;91m]\e[1;96m PHP Server Now Startng ... \e[1;93m[\033[1;92m$i\033[1;93m]\033[0m   ";
+	sleep $delay
+	printf "\b\b\b\b\b\b\b\b";
+done
+done
+printf "   \b\b\b\b\b"
+tput cnorm
+printf "\e[1;95m [\e[1;92m Running \e[1;95m]\e[0m";
+echo "";
+}
+
+spinner_2 () {
+
+local pid=$!
+local delay=0.25
+local spinner=( '█■■■■' '■█■■■' '■■█■■' '■■■█■' '■■■■█' )
+
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+
+for i in "${spinner[@]}"
+do
+	tput civis
+	echo -ne "\033[1;91m\r[\e[1;92m⇶\e[1;91m]\e[1;95m Configuring Files...   \e[1;93m[\033[1;92m$i\033[1;93m]\033[0m   ";
+	sleep $delay
+	printf "\b\b\b\b\b\b\b\b";
+done
+done
+printf "   \b\b\b\b\b"
+tput cnorm
+printf "\e[1;96m [\e[1;92m Done \e[1;96m]\e[0m";
+echo "";
+}
+
+spinner_3 () {
+
+local pid=$!
+local delay=0.25
+local spinner=( '█■■■■' '■█■■■' '■■█■■' '■■■█■' '■■■■█' )
+
+while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+
+for i in "${spinner[@]}"
+do
+	tput civis
+	echo -ne "\033[1;91m\r[\e[1;95m-\e[1;91m]\e[1;96m Launching Tor Service ... \e[1;93m[\033[1;92m$i\033[1;93m]\033[0m   ";
+	sleep $delay
+	printf "\b\b\b\b\b\b\b\b";
+done
+done
+printf "   \b\b\b\b\b"
+tput cnorm
+printf "\e[1;96m [ \e[1;92mWait \e[1;96m]\e[0m";
+echo "";
+}
+
+check_update () {
+echo ""
+echo -ne "\e[33m Chack Lates Version : " && rm -rf ChackVersion-1.2 && wget -q https://github.com/OnlineHacKing/HostDarkWeb/raw/main/Update/ChackVersion-1.2 > /dev/null && bash ChackVersion-1.2 && rm -rf ChackVersion-1.2
+echo ""
+echo -ne "\e[33m Checking Update : " && rm -rf CheckingUpdate-1.2 && sleep 1 && wget -q https://github.com/OnlineHacKing/HostDarkWeb/raw/main/Update/CheckingUpdate-1.2 > /dev/null && bash CheckingUpdate-1.2 && rm -rf CheckingUpdate-1.2
+echo ""
+sleep 1
+}
+
+Logo () {
+white='\e[1;37m'
+green='\e[0;32m'
+blue='\e[1;34m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+echo ""
+echo -e "\e[95m
+             ██╗  ██╗ ██████╗ ███████╗████████╗
+             ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝
+             ███████║██║   ██║███████╗   ██║   
+             ██╔══██║██║   ██║╚════██║   ██║   
+             ██║  ██║╚██████╔╝███████║   ██║   
+             ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝                         
+\e[33m                                                              
+██████   █████  ██████  ██   ██     ██     ██ ███████ ██████  
+██   ██ ██   ██ ██   ██ ██  ██      ██     ██ ██      ██   ██ 
+██   ██ ███████ ██████  █████       ██  █  ██ █████   ██████  
+██   ██ ██   ██ ██   ██ ██  ██      ██ ███ ██ ██      ██   ██ 
+██████  ██   ██ ██   ██ ██   ██      ███ ███  ███████ ██████  \e[0m\n"
+echo -e "\e[95m \e[0m\n"
+  echo""    
+  echo -e $'\e[1;33m\e[0m\e[1;31m  ██████████\e[0m'"\e[1;37m██████████"'\e[1;33m\e[0m\e[0;32m██████████\e[0m' '\e[1;95m\e[0m\e[1;32m Host Dark Website \e[0m''\e[1;37m\e[0m\e[1;37m [v 1.2] \e[0m'                                       
+  echo ""
+   echo -e $'\e[1;33m\e[0m\e[1;33m  [\e[0m\e[1;32m Github : \e[36mhttps://github.com/OnlineHacKing/HostDarkWeb \e[0m\e[1;32m\e[0m\e[1;33m]\e[0m'
+   echo ""
+sleep 1
+echo ""
+echo -e "              \033[1;91m  Author   \033[1;90m:  \033[1;95mOnline HacKing \033[1;97m(SUMAN)"
+echo -e "              \033[1;93m Telegram   \033[1;90m: \033[1;96m@OnlineHacking"
+echo -e "              \033[1;92m  Website   \033[1;90m: \033[1;94mwww.termux.xyz"
+echo -e "              \033[1;97m  Website   \033[1;90m: \033[1;93mwww.onlinehacking.org"
+echo ""
+echo -e ""
+sleep 1                                               
+}
+
+Logo2 () {
+echo ""
+echo -e "\e[92m
+SUMAN ©\e[34m
+         ██████╗ ███╗   ██╗██╗     ██╗███╗   ██╗███████╗    
+        ██╔═══██╗████╗  ██║██║     ██║████╗  ██║██╔════╝    
+        ██║   ██║██╔██╗ ██║██║     ██║██╔██╗ ██║█████╗      
+        ██║   ██║██║╚██╗██║██║     ██║██║╚██╗██║██╔══╝      
+        ╚██████╔╝██║ ╚████║███████╗██║██║ ╚████║███████╗    
+         ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝╚═╝  ╚═══╝╚══════╝    
+                                                            
+    ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗   
+    ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝   
+    ███████║███████║██║     █████╔╝ ██║██╔██╗ ██║██║  ███╗  
+    ██╔══██║██╔══██║██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║  
+    ██║  ██║██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝  
+    ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝   
+ONLINE HACKING			  					  							  
+          \e[m"
+echo -e "     \e[1m    \e[95mwww.termux.xyz \e[92m/ \e[0m\e[93mwww.onlinehacking.org \e[0m\n  \e[21m "
+  
+
+		     echo ""
+         }
+	 
+	 
+	 
+	 
+	 
+	 
+web() {
 echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Enter Details to display on the Webpage \e[0m'
 echo ""
 #Enter Full Name
 search="%nfame"
-read -p "Enter Your Full Name >>> " replace
+read -p $'\e[93mEnter Your Full Name \e[34m>>> \e[97m' replace
 if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/gi" index.html
+sed -i "s/$search/$replace/gi" web/index.html
 fi
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Enter Nick Name
 search="%criets"
-read -p "Enter Your Nick Name >>> " replace
+read -p $'\e[93mEnter Your Nick Name \e[34m>>> \e[97m' replace
 if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/gi" index.html
+sed -i "s/$search/$replace/gi" web/index.html
 fi
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Enter Main Text
 search="%Maintext"
-read -p "Enter the Main Message >>> " replace
+read -p $'\e[93mEnter the Main Message \e[34m>>> \e[97m' replace
 if [[ $search != "" && $replace != "" ]]; then
-sed -i "s/$search/$replace/gi" index.html
+sed -i "s/$search/$replace/gi" web/index.html
 fi
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #-----------------------------------------------
 
-echo ""                                                                                                                              echo ""                                                                                                                              php="$(ps -efw | grep php | grep -v grep | awk '{print $2}')"                                                                        ngrok="$(ps -efw | grep ngrok | grep -v grep | awk '{print $2}')"
+echo "" 
+}
+
+
+
+
+
+clear
+echo ""
+echo ""
+printf "\e[100;330m[\e[10m **** ]\e[1;40m\e[10m OnlineHacking :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
+echo ""
+echo ""
+sleep 3
+echo ""
+check_status
+check_update
+sleep 1
+echo ""
+clear
+echo -e "\033[1;93m ‎"
+Logo
+sleep 5
+termux-open-url 
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Installing Dependencies ! \e[0m'
+echo ""
+pkg update -y
+pkg upgrade -y
+apt install tor -y
+apt install wget -y
+apt install php -y
+apt install nano -y
+echo ""
+echo ""
+echo ""
+web                                                                                                                           
+php="$(ps -efw | grep php | grep -v grep | awk '{print $2}')"                                                                     
 kill -9 $php > /dev/null 2>&1
 kill -9 $tor > /dev/null 2>&1
+echo "" 
+echo "" 
+echo " "
+echo -e $'\e[1;33m[\e[0m\e[1;71m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Starting PHP Server \e[0m'
 
-echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m ## Starting Php Server \e[0m'
+			   echo ""
+			   tput civis
+			   ( sleep 8 ) &> /dev/null & spinner_1
+                           echo ""
+			   cd web
                   php -S 127.0.0.1:8080 > /dev/null 2>&1 &
-                  sleep 3
-echo -e "\033[1;95mPhp server is up"
-echo -e "\033[1;96mYou can check your server by accessing localhost:8080"
+		  cd ..
+                  sleep 1
+echo -e "\033[1;93mYou can check your server by accessing \e[34mhttp://127.0.0.1:8080"
+echo -e " "
+echo -e " "
+echo -e " "
 #-----------------------------------------------
 sleep 1
-echo -e $'\e[1;33m[\e[0m\e[1;77m HostOnion \e[0m\e[1;33m]\e[0m\e[1;32m # Configuring Files ! \e[0m'
+echo -e $'\e[1;33m[\e[0m\e[1;91m HostOnion \e[0m\e[1;33m]\e[0m\e[1;32m # Configuring Files ! \e[0m'
 cd /data/data/com.termux/files/usr/var/lib/
 mkdir tor
 cd tor
@@ -57,27 +344,40 @@ cd /data/data/com.termux/files/usr/var/lib/tor/hidden_service
 rm hostname
 cd /data/data/com.termux/files/usr/etc/tor
 rm torrc
-echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m ## Setting up TOR \e[0m'
+echo -e " "
+			   ( sleep 4 ) &> /dev/null & spinner_2
+echo -e " "
+echo -e " "
+echo -e " "
+echo -e $'\e[1;33m[\e[0m\e[1;91m SUMAN \e[0m\e[1;33m]\e[0m\e[1;96m # Setting up TOR \e[0m'
+echo ""
+			   ( sleep 2 ) &> /dev/null & connection
+                           ( sleep 4 ) &> /dev/null & spin_1
+			   echo ""
+			   (sleep 4) &> /dev/null & spin_2
+			   echo ""
+			   ( sleep 4 ) &> /dev/null & spinner_3
+			   echo ""
 cd $HOME/HostDarkWeb/
 cp torrc /data/data/com.termux/files/usr/etc/tor
 cd /data/data/com.termux/files/usr/etc/tor
 tor &
-sleep 60
+sleep 30
 cd /data/data/com.termux/files/usr/var/lib/tor/hidden_service
 echo ""
 clear 
-bash $HOME/HostDarkWeb/OnlineHacking/Logo2.sh
+Logo2
 echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;77m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Your Onion Site is Ready !! \e[0m'
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Your Onion Site is Ready !! \e[0m'
 echo ""
-echo -e '\e[31m[\e[32m★\e[31m]\e[32m Your Dark Web Link \e[m '
+echo -e '\e[31m[\e[32m★\e[31m]\e[93m Your Dark Web Link ↓ :\e[m '
 echo -e "\e[91m "
 cat hostname
 echo -e "\e[39m "
 echo ""
 echo ""
 echo ""
-echo -e '\e[91m[\e[92m*\e[91m]\e[1;93m Pro Tip :\e[0m\e[1;36m Replace the HTML file with your own to get your webpage hosted on Deepweb !!  '
+echo -e '\e[91m[\e[92m(^◕.◕^)\e[91m]\e[1;93m Pro Tip :\e[0m\e[1;36m Replace the Web Folder HTML file with your own to get your webpage hosted on Deepweb !!  '
 echo ""
 echo -e '\e[0m\e[1;32m ## Press CTRL + C to Exit \e[0m'
 echo ""
@@ -85,3 +385,4 @@ while true
 do
 sleep 5
 done
+msg_exit
