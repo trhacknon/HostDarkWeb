@@ -46,16 +46,18 @@ echo -e " "
 echo ""
 echo -e "\e[31m[\e[32m*\e[31m]\e[33m Enter Your Web File Folder Part : \e[m "
 echo -e " "
-echo -e "\e[31m[\e[32m*\e[31m]\e[33m Example : \e[32m/sdcard/Download/web \e[92mor \e[32m/storage/emulated/0/Download/web  \e[m "
+echo -e "\e[31m[\e[32m*\e[31m]\e[33m Example : \e[32m/sdcard/Download/we/ \e[91mor \e[32m/storage/emulated/0/Download/web/  \e[m "
 echo " "
 echo " "
 read -p $'\e[31m[\e[32m*\e[31m]\e[33m cd \e[97m' token
 cd $token
 echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;71m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Starting PHP Server \e[0m'
+echo ""
+echo ""
+echo -e $'\e[1;33m[\e[0m\e[1;71m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m Starting Server..... \e[0m'
 echo ""
 php -S 127.0.0.1:8080 > /dev/null 2>&1 &
-sleep 1
+sleep 3
 echo -e "\033[1;93mYou can check your server by accessing \e[34mhttp://127.0.0.1:8080"
 echo -e " "
 echo -e "  "
