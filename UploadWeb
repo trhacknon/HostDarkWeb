@@ -1,3 +1,5 @@
 #!bin/bash
 #Coded by Suman
 echo -e " "
+killall php
+echo -e " "
