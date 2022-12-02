@@ -5,7 +5,7 @@
 
 </h1>
 
-<h1 align="center">HostDarkWeb - OnlineHacking</h1>
+<h1 align="center">Host Dark Web - OnlineHacking</h1>
 <p align="center">
   Create Your Own Dark Web Onion Website on Termux
 </p>
@@ -53,19 +53,11 @@
 *This tool is for educational purposes only !*<br />
 *I will not be responsible for any misuse*
 
-## Usage
+## ☣️ Installation and Usage Guid
 
-```bash
-git clone https://github.com/OnlineHacKing/HostDarkWeb
-```
+### Using Tutorial : https://termux.xyz/create-your-own-dark-web-onion-website-on-termux/
+<p><br /></p>
 
-```bash
-cd HostDarkWeb
-```
-
-```bash
-bash HostOnion
-```
 ## Note
 * `This tool is for termux users only!`
 
