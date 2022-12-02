@@ -22,7 +22,7 @@ cd HostDarkWeb
 ```
 
 ```bash
-bash hostonion
+bash HostOnion
 ```
 ## Note
 * `This tool is for termux users only!`
