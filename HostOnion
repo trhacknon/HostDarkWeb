@@ -164,7 +164,7 @@ while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
 for i in "${spinner[@]}"
 do
 	tput civis
-	echo -ne "\033[1;91m\r[\e[1;95m-\e[1;91m]\e[1;96m Launching Tor Service ... \e[1;93m[\033[1;92m$i\033[1;93m]\033[0m   ";
+	echo -ne "\033[1;91m\r[\e[1;95m-\e[1;91m]\e[1;95m Launching Tor Service ... \e[1;93m[\033[1;92m$i\033[1;93m]\033[0m   ";
 	sleep $delay
 	printf "\b\b\b\b\b\b\b\b";
 done
