@@ -48,7 +48,7 @@ cd $token
 echo ""
 echo ""
 echo ""
-echo -e $'\e[1;33m[\e[0m\e[1;71m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m Starting Server..... \e[0m'
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m Starting Server..... \e[0m'
 echo ""
 php -S 127.0.0.1:8080 > /dev/null 2>&1 &
 sleep 3
