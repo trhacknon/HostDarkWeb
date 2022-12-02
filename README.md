@@ -66,16 +66,14 @@
 * `Replace the HTML file with your own to get your webpage hosted on Deepweb !!`
 
 
+
 ### 📸 SCREENSHOTS [Termux]
 
 <br>
 <p align="center">
-<img width="40%" src="https://i.pinimg.com/564x/99/5e/4d/995e4dcb94133d3c74597bed932288fb.jpg"/>
-</p>
-<br>
 <p align="center">
-<img width="41%" src="https://i.pinimg.com/564x/b1/1f/76/b11f769cb43a768fcbdeb509477e7086.jpg"/>
-<img width="40%" src="https://i.pinimg.com/564x/8c/6e/b6/8c6eb6035fb6ba53deb1c47c77e0c6a0.jpg"/>
+<img width="45%" src="https://github.com/OnlineHacKing/HostDarkWeb/raw/main/OnlineHacking/Create%20Your%20Own%20Dark%20Web%20Onion%20Website%20on%20Termux%20(1).webp"/>
+<img width="47%" src="https://github.com/OnlineHacKing/HostDarkWeb/blob/main/OnlineHacking/Create%20Your%20Own%20Dark%20Web%20Onion%20Website%20on%20Termux%20(2).webp?raw=true"/>
 </p>
 
 
