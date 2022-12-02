@@ -303,6 +303,7 @@ sleep 5
 termux-open-url 
 echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m # Installing Dependencies ! \e[0m'
 echo ""
+termux-setup-storage
 pkg update -y
 pkg upgrade -y
 apt install tor -y
@@ -340,11 +341,11 @@ echo -e $'\e[1;33m[\e[0m\e[1;91m HostOnion \e[0m\e[1;33m]\e[0m\e[1;32m # Configu
 cd /data/data/com.termux/files/usr/var/lib/
 mkdir tor
 cd tor
-mkdir hidden_service
+mkdir hidden_service > /dev/null 2>&1 &
 cd /data/data/com.termux/files/usr/var/lib/tor/hidden_service
-rm hostname
+rm hostname > /dev/null 2>&1 &
 cd /data/data/com.termux/files/usr/etc/tor
-rm torrc
+rm torrc > /dev/null 2>&1 &
 echo -e " "
 			   ( sleep 4 ) &> /dev/null & spinner_2
 echo -e " "
