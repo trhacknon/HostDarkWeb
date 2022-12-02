@@ -1,5 +1,5 @@
 <h1 align="center">
-<p> Command : https://www.onlinehacking.in/how-to-create-host-your-own-dark-web-onion-website-on-linux
+<p> Command : https://termux.xyz/create-your-own-dark-web-onion-website-on-termux/
       </p>
      <br>
 </h1>
