@@ -46,7 +46,7 @@ echo -e " "
 echo ""
 echo -e "\e[31m[\e[32m*\e[31m]\e[33m Enter Your Web File Folder Part : \e[m "
 echo -e " "
-echo -e "\e[31m[\e[32m*\e[31m]\e[33m Example \e[32m/sdcard/Download/web \e[92mor \e[32m/storage/emulated/0/Download/web  \e[m "
+echo -e "\e[31m[\e[32m*\e[31m]\e[33m Example : \e[32m/sdcard/Download/web \e[92mor \e[32m/storage/emulated/0/Download/web  \e[m "
 echo " "
 echo " "
 read -p $'\e[31m[\e[32m*\e[31m]\e[33m cd \e[97m' token
