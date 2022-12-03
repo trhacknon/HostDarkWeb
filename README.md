@@ -59,7 +59,7 @@
 <p><br /></p>
 
 ## Note
-* `This tool is for termux users only!`
+* `This tool is for termux & linux users only!`
 
 
 ## 💡Pro tip 
