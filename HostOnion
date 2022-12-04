@@ -296,6 +296,18 @@ check_status
 check_update
 sleep 1
 echo ""
+
+echo ""
+	printf "                   \e[91m|===================|
+	          [¤]   \e[1;33mW A R N I N G${red}   \e[91m[¤]
+	           \e[91m|===================|\n\n"
+			   echo ""
+printf " \e[91m[!]  \e[1;32m• You Use Mobile Data to Dark Web 100% Working,\n\n• But You Use Wi-Fi Router Data = \e[93m( you use Wi-Fi router network check your Wi-Fi out of network working or not ) \e[32mAnd configure you router  \n\n"
+echo ""
+echo ""
+read -p $'\e[1;40m\e[31m[\e[32m*\e[31m]\e[96m Click enter to continue : \e[0m' 
+echo""
+echo""
 clear
 echo -e "\033[1;93m ‎"
 Logo
