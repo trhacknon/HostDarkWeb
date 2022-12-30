@@ -5,12 +5,12 @@
 
 </h1>
 
-<h1 align="center">Host Dark Web - OnlineHacking</h1>
+<h1 align="center">Host Dark Web - trhacknon</h1>
 <p align="center">
   Create Your Own Dark Web Onion Website on Termux
 </p>
 <p align="center">
-<a href="https://termux.xyz/create-your-own-dark-web-onion-website-on-termux/"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
+<a href="https://termux.xyz/create-your-own-dark-web-onion-website-on-termux/"><img title="Made in" anonymous" src="https://img.shields.io/badge/MADE%20BY-ANONYMOUS-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
 </p>
 
 </p>
@@ -23,7 +23,7 @@
   <img src="https://img.shields.io/github/issues/OnlineHacKing/HostDarkWeb?color=red&style=for-the-badge">
     <img src="https://img.shields.io/github/license/OnlineHacKing/HostDarkWeb?style=for-the-badge&color=blue">
 <br>
-    <img src="https://img.shields.io/badge/Author-SUMAN-green?style=flat-square">
+    <img src="https://img.shields.io/badge/Author-trhacknon-green?style=flat-square">
     <img src="https://img.shields.io/badge/Open%20Source-No-orange?style=flat-square">
     <img src="https://img.shields.io/badge/Maintained-Yes-cyan?style=flat-square">
     <img src="https://img.shields.io/badge/Written%20In-Shell-blue?style=flat-square">
@@ -39,7 +39,7 @@
 
 <p align="center">
 
-![unnamed (2)](https://raw.githubusercontent.com/OnlineHacKing/HostDarkWeb/main/OnlineHacking/HostDarkWeb.webp)
+![unnamed (2)](https://raw.githubusercontent.com/trhacknon/HostDarkWeb/main/OnlineHacking/HostDarkWeb.webp)
 
 </p>
 
@@ -72,8 +72,8 @@
 <br>
 <p align="center">
 <p align="center">
-<img width="45%" src="https://github.com/OnlineHacKing/HostDarkWeb/raw/main/OnlineHacking/Create%20Your%20Own%20Dark%20Web%20Onion%20Website%20on%20Termux%20(1).webp"/>
-<img width="47%" src="https://github.com/OnlineHacKing/HostDarkWeb/blob/main/OnlineHacking/Create%20Your%20Own%20Dark%20Web%20Onion%20Website%20on%20Termux%20(2).webp?raw=true"/>
+<img width="45%" src="https://github.com/trhacknon/HostDarkWeb/raw/main/OnlineHacking/Create%20Your%20Own%20Dark%20Web%20Onion%20Website%20on%20Termux%20(1).webp"/>
+<img width="47%" src="https://github.com/trhacknon/HostDarkWeb/blob/main/OnlineHacking/Create%20Your%20Own%20Dark%20Web%20Onion%20Website%20on%20Termux%20(2).webp?raw=true"/>
 </p>
 
 
@@ -82,7 +82,7 @@
 ## 👨🏻‍💻 CONNECT WITH US :
 
 
-<a href="https://github.com/OnlineHacKing"><img title="Github" src="https://img.shields.io/badge/Online-hacking-brightgreen?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/trhacknon"><img title="Github" src="https://img.shields.io/badge/Online-hacking-brightgreen?style=for-the-badge&logo=github"></a>
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-FOLLOW-red?style=for-the-badge&logo=instagram)](https://www.instagram.com/suman333mondal/)
 [![Instagram](https://img.shields.io/badge/WEBSITE-VISIT-yellow?style=for-the-badge&logo=blogger)](https://www.termux.xyz)
 [![Instagram](https://img.shields.io/badge/LINKEDIN-CONNECT-red?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sumam333mondal/)
@@ -102,5 +102,5 @@
 
 
 
-                     Inspired By github.com/OnlineHacking
+                     Inspired By github.com/trhacknon
 
